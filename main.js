@@ -95,3 +95,11 @@ document
       .map((place) => createContent(place));
     placeArray.forEach((place) => container.appendChild(place));
   });
+
+document.getElementById("trigger").onclick = function () {
+  open();
+};
+
+function open() {
+  document.querySelector(".navigation__menu").classList.toggle("show");
+}
